@@ -205,8 +205,6 @@ def main():
     # Экземпляры классов.
     apple = Apple()
     snake = Snake()
-    pg.mixer.init()
-    bite = pg.mixer.Sound('bite.wav')
 
     running = True
     while running:
@@ -218,7 +216,6 @@ def main():
                 running = False
         if snake.get_head_position() == apple.position:
             snake.length += 1
-            bite.play()
             apple.randomize_position(snake.positions)
         snake.move()
         snake.draw(screen)
