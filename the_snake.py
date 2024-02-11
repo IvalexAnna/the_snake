@@ -223,7 +223,8 @@ def main():
         snake.move()
         snake.draw(screen)
         apple.draw(screen)
-        pg.display.set_caption(f'Змейка, cкорость: {SPEED}, рекорд: {snake.record}')
+        caption = f'Змейка, скорость: {SPEED}, рекорд: {snake.record}'
+        pg.display.set_caption(caption)
         pg.display.update()
     pg.quit()
 
