@@ -67,7 +67,7 @@ class GameObject:
 
     def draw(self):
         """Абстрактный метод."""
-        raise NotImplementedError()
+        raise NotImplementedError('Эта функция недоступна.')
 
 
 class Apple(GameObject):
@@ -228,4 +228,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-"""Вызов функции"""
